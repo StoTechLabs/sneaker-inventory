@@ -13,6 +13,11 @@ it 'should show style name' do
 		expect(test_shoe.size).to eq 12
 	end
 
+it 'should save all styles to a style array' do
+		test_shoe = Shoe.new({:size => 12, :quantity => 6})
+		expect(test_shoe.save).to eq [test_shoe]
+	end
+
 
 
 end

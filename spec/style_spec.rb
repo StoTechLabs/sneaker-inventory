@@ -21,5 +21,4 @@ describe Style do
 
 
 
-
 end
