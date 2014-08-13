@@ -7,6 +7,8 @@ class Style
 		@color = attributes[:color]
 	end
 
+	
+
 
 
 
