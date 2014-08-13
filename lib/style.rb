@@ -1,5 +1,7 @@
 class Style
 
+	@@allstyles = []
+
 	attr_reader :name, :color
 
 	def initialize(attributes)
@@ -7,7 +9,15 @@ class Style
 		@color = attributes[:color]
 	end
 
-	
+	def save
+		@@allstyles << self 
+	end
+
+	def Style.all
+		@@allstyles 
+	end
+
+
 
 
 
